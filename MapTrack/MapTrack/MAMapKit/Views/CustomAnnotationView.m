@@ -9,14 +9,14 @@
 #import "CustomAnnotationView.h"
 #import "CustomCalloutView.h"
 
-#define kWidth  150.f
-#define kHeight 60.f
+#define kWidth  40.f
+#define kHeight 55.f
 
-#define kHoriMargin 5.f
-#define kVertMargin 5.f
+#define kHoriMargin 0.f
+#define kVertMargin 15.f
 
-#define kPortraitWidth  50.f
-#define kPortraitHeight 50.f
+#define kPortraitWidth  40.f
+#define kPortraitHeight 40.f
 
 #define kCalloutWidth   200.0
 #define kCalloutHeight  70.0
@@ -97,7 +97,7 @@
             
             UILabel *name = [[UILabel alloc] initWithFrame:CGRectMake(60, 10, 100, 30)];
             name.backgroundColor = [UIColor clearColor];
-            name.textColor = [UIColor whiteColor];
+            name.textColor = [UIColor redColor];
             name.text = @"Hello Amap!";
             [self.calloutView addSubview:name];
         }
@@ -144,14 +144,14 @@
         [self addSubview:self.portraitImageView];
         
         /* Create name label. */
-        self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(kPortraitWidth + kHoriMargin,
-                                                                   kVertMargin,
-                                                                   kWidth - kPortraitWidth - kHoriMargin,
-                                                                   kHeight - 2 * kVertMargin)];
+        self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,
+                                                                   0,
+                                                                   kWidth,
+                                                                   kHeight - kPortraitWidth)];
         self.nameLabel.backgroundColor  = [UIColor clearColor];
         self.nameLabel.textAlignment    = NSTextAlignmentCenter;
         self.nameLabel.textColor        = [UIColor whiteColor];
-        self.nameLabel.font             = [UIFont systemFontOfSize:15.f];
+        self.nameLabel.font             = [UIFont systemFontOfSize:14.f];
         [self addSubview:self.nameLabel];
     }
     

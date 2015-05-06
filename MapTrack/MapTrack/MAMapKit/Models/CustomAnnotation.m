@@ -10,7 +10,7 @@
 #import "CustomAnnotationView.h"
 #import "RunMember.h"
 #import "MAMemberAnnotation.h"
-#define kCalloutViewMargin          -8
+#define kCalloutViewMargin -8
 
 @interface CustomAnnotation ()
 @property (nonatomic, strong) MAMapView *mapView;
@@ -41,14 +41,11 @@
     return self;
 }
 
-
-
 #pragma mark - MAMapViewDelegate
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {
-    
-    
+ 
     if ([annotation isKindOfClass:[MAMemberAnnotation class]])
     {
         MAMemberAnnotation *memberAnnotation = (MAMemberAnnotation *)annotation;
@@ -62,7 +59,7 @@
             annotationView = [[CustomAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:customReuseIndetifier];
             // must set to NO, so we can show the custom callout view.
             annotationView.canShowCallout = NO;
-            annotationView.draggable = YES;
+            annotationView.draggable = NO;
             annotationView.calloutOffset = CGPointMake(0, -5);
         }
         
@@ -98,12 +95,10 @@
             
             [self.mapView setCenterCoordinate:coordinate animated:YES];
         }
-        
     }
 }
 
 #pragma mark Private
-
 - (void)enumMembers {
     for (RunMember *member in self.members) {
         [self addAnnotationWithCooordinate:member];
@@ -125,6 +120,15 @@
     annotation.coordinate = member.coordinate;
     annotation.member = member;
     [self.mapView addAnnotation:annotation];
+}
+
+#pragma mark Public 
+- (void)refreshData:(NSArray *)members {
+    if (self.members.count > 0) {
+        [self.members removeAllObjects];
+        self.members  = (NSMutableArray *)members;
+    }
+    [self enumMembers];
 }
 
 @end

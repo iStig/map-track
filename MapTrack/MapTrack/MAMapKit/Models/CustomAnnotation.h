@@ -12,4 +12,5 @@
 @interface CustomAnnotation : NSObject <MAMapViewDelegate>
 
 - (instancetype)initWithMembers:(NSArray *)members mapView:(MAMapView *)map;
+- (void)refreshData:(NSArray *)members;
 @end

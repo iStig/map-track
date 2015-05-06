@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PKd-Kq-FIe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -19,6 +19,143 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="85"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="4xx-eV-Pky">
+            <objects>
+                <viewController id="ogq-n6-wIj" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YeP-Ox-1xP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QoG-q8-ea6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fJ0-om-CKV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-oT-v8t">
+                                <rect key="frame" x="207" y="260" width="187" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.53567023030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="1FI-Mo-Pja"/>
+                                    <constraint firstAttribute="height" constant="49" id="39o-tF-Fax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tracking Animation"/>
+                                <connections>
+                                    <action selector="TrackingAnimation:" destination="ogq-n6-wIj" eventType="touchUpInside" id="hiU-dr-Odp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl1-hS-rw4">
+                                <rect key="frame" x="207" y="100" width="187" height="49"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Kfs-Cr-bwx"/>
+                                    <constraint firstAttribute="width" constant="187" id="Q4K-ty-3gK"/>
+                                    <constraint firstAttribute="height" constant="49" id="xR4-yQ-kCB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Move Tracking"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xR4-yQ-kCB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="moveTracking:" destination="ogq-n6-wIj" eventType="touchUpInside" id="CYC-VC-yia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cX-6U-T5c">
+                                <rect key="frame" x="207" y="175" width="187" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="6qZ-Tw-eZ6"/>
+                                    <constraint firstAttribute="width" constant="187" id="ahy-pq-9nF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="5 Members"/>
+                                <connections>
+                                    <action selector="memebers:" destination="ogq-n6-wIj" eventType="touchUpInside" id="ff3-99-QaW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0cX-6U-T5c" firstAttribute="centerX" secondItem="jfi-oT-v8t" secondAttribute="centerX" id="HJ8-WF-snH"/>
+                            <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="124" id="Qts-ww-BnQ"/>
+                            <constraint firstItem="pl1-hS-rw4" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="100" id="TBv-Eb-MCl"/>
+                            <constraint firstItem="jfi-oT-v8t" firstAttribute="centerX" secondItem="pl1-hS-rw4" secondAttribute="centerX" id="V9G-eG-9D6"/>
+                            <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="pl1-hS-rw4" secondAttribute="bottom" constant="26" id="aQg-dm-Knc"/>
+                            <constraint firstItem="pl1-hS-rw4" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="100" id="eHa-qW-VFq"/>
+                            <constraint firstItem="jfi-oT-v8t" firstAttribute="top" secondItem="0cX-6U-T5c" secondAttribute="bottom" constant="36" id="gyI-1r-n8e"/>
+                            <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="pl1-hS-rw4" secondAttribute="bottom" constant="26" id="m0u-9l-xcA"/>
+                            <constraint firstAttribute="centerX" secondItem="0cX-6U-T5c" secondAttribute="centerX" id="z8K-Ts-C92"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TBv-Eb-MCl"/>
+                                <exclude reference="Qts-ww-BnQ"/>
+                                <exclude reference="aQg-dm-Knc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rns-aI-2qo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVr-i3-cN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="77"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="318-HF-Ute">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PKd-Kq-FIe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XSk-rX-KMh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ogq-n6-wIj" kind="relationship" relationship="rootViewController" id="jq1-aF-Fqq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ur-y0-j1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="77"/>
+        </scene>
+        <!--Move View Controller-->
+        <scene sceneID="T9W-8e-7nZ">
+            <objects>
+                <viewController id="B9n-lO-VHY" customClass="MoveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H3S-UI-3lp"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ws-Re-7Mh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YcS-YU-cSw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czw-k6-5Dy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Track View Controller-->
+        <scene sceneID="EaV-XH-W5J">
+            <objects>
+                <viewController id="yGO-yj-vJ2" customClass="TrackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mxM-by-Qct"/>
+                        <viewControllerLayoutGuide type="bottom" id="H1l-rv-LYa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kdW-CR-YZl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVz-wq-3fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

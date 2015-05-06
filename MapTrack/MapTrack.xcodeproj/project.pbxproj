@@ -14,6 +14,12 @@
 		62446F361AF9E3F30020FBE4 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F351AF9E3F30020FBE4 /* CustomCalloutView.m */; };
 		62446F391AF9E67A0020FBE4 /* RunMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F381AF9E67A0020FBE4 /* RunMember.m */; };
 		62446F3C1AF9EC870020FBE4 /* MAMemberAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F3B1AF9EC870020FBE4 /* MAMemberAnnotation.m */; };
+		62446F421AF9F3D30020FBE4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F411AF9F3D30020FBE4 /* RootViewController.m */; };
+		62446F451AF9F7E90020FBE4 /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F441AF9F7E90020FBE4 /* MoveViewController.m */; };
+		62446F481AF9F7FA0020FBE4 /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F471AF9F7FA0020FBE4 /* TrackViewController.m */; };
+		62446F4B1AF9FE840020FBE4 /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4A1AF9FE840020FBE4 /* Tracking.m */; };
+		62446F4E1AF9FEEF0020FBE4 /* CustomTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */; };
+		62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */ = {isa = PBXBuildFile; fileRef = 62446F4F1AFA02980020FBE4 /* GuGong.tracking */; };
 		62F952691AF9AD4900D63977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F952681AF9AD4900D63977 /* main.m */; };
 		62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526B1AF9AD4900D63977 /* AppDelegate.m */; };
 		62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526E1AF9AD4900D63977 /* ViewController.m */; };
@@ -58,6 +64,17 @@
 		62446F381AF9E67A0020FBE4 /* RunMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunMember.m; sourceTree = "<group>"; };
 		62446F3A1AF9EC870020FBE4 /* MAMemberAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMemberAnnotation.h; sourceTree = "<group>"; };
 		62446F3B1AF9EC870020FBE4 /* MAMemberAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMemberAnnotation.m; sourceTree = "<group>"; };
+		62446F401AF9F3D30020FBE4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		62446F411AF9F3D30020FBE4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		62446F431AF9F7E90020FBE4 /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
+		62446F441AF9F7E90020FBE4 /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
+		62446F461AF9F7FA0020FBE4 /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewController.h; sourceTree = "<group>"; };
+		62446F471AF9F7FA0020FBE4 /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewController.m; sourceTree = "<group>"; };
+		62446F491AF9FE840020FBE4 /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
+		62446F4A1AF9FE840020FBE4 /* Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracking.m; sourceTree = "<group>"; };
+		62446F4C1AF9FEEF0020FBE4 /* CustomTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTracking.h; sourceTree = "<group>"; };
+		62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTracking.m; sourceTree = "<group>"; };
+		62446F4F1AFA02980020FBE4 /* GuGong.tracking */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuGong.tracking; sourceTree = "<group>"; };
 		62F952631AF9AD4900D63977 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F952671AF9AD4900D63977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F952681AF9AD4900D63977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +132,7 @@
 		62446F231AF9DDCF0020FBE4 /* MAMapKit */ = {
 			isa = PBXGroup;
 			children = (
+				62446F4F1AFA02980020FBE4 /* GuGong.tracking */,
 				62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */,
 				62446F241AF9DDCF0020FBE4 /* Config */,
 				62446F261AF9DDCF0020FBE4 /* Helpers */,
@@ -143,6 +161,10 @@
 		62446F2A1AF9DDCF0020FBE4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				62446F491AF9FE840020FBE4 /* Tracking.h */,
+				62446F4A1AF9FE840020FBE4 /* Tracking.m */,
+				62446F4C1AF9FEEF0020FBE4 /* CustomTracking.h */,
+				62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */,
 				62446F2D1AF9DDF70020FBE4 /* CustomAnnotation.h */,
 				62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */,
 				62446F371AF9E67A0020FBE4 /* RunMember.h */,
@@ -200,8 +222,14 @@
 				62446F231AF9DDCF0020FBE4 /* MAMapKit */,
 				62F9526A1AF9AD4900D63977 /* AppDelegate.h */,
 				62F9526B1AF9AD4900D63977 /* AppDelegate.m */,
+				62446F401AF9F3D30020FBE4 /* RootViewController.h */,
+				62446F411AF9F3D30020FBE4 /* RootViewController.m */,
 				62F9526D1AF9AD4900D63977 /* ViewController.h */,
 				62F9526E1AF9AD4900D63977 /* ViewController.m */,
+				62446F431AF9F7E90020FBE4 /* MoveViewController.h */,
+				62446F441AF9F7E90020FBE4 /* MoveViewController.m */,
+				62446F461AF9F7FA0020FBE4 /* TrackViewController.h */,
+				62446F471AF9F7FA0020FBE4 /* TrackViewController.m */,
 				62F952701AF9AD4900D63977 /* Main.storyboard */,
 				62F952731AF9AD4900D63977 /* Images.xcassets */,
 				62F952751AF9AD4900D63977 /* LaunchScreen.xib */,
@@ -319,6 +347,7 @@
 				62F952721AF9AD4900D63977 /* Main.storyboard in Resources */,
 				62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */,
 				62F952741AF9AD4900D63977 /* Images.xcassets in Resources */,
+				62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,10 +367,15 @@
 			files = (
 				62446F331AF9E3B90020FBE4 /* CustomAnnotationView.m in Sources */,
 				62446F361AF9E3F30020FBE4 /* CustomCalloutView.m in Sources */,
+				62446F451AF9F7E90020FBE4 /* MoveViewController.m in Sources */,
 				62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */,
 				62446F391AF9E67A0020FBE4 /* RunMember.m in Sources */,
+				62446F421AF9F3D30020FBE4 /* RootViewController.m in Sources */,
 				62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */,
+				62446F4E1AF9FEEF0020FBE4 /* CustomTracking.m in Sources */,
 				62446F2B1AF9DDCF0020FBE4 /* APIKeyConfig.m in Sources */,
+				62446F4B1AF9FE840020FBE4 /* Tracking.m in Sources */,
+				62446F481AF9F7FA0020FBE4 /* TrackViewController.m in Sources */,
 				62446F2F1AF9DDF70020FBE4 /* CustomAnnotation.m in Sources */,
 				62F952691AF9AD4900D63977 /* main.m in Sources */,
 				62446F3C1AF9EC870020FBE4 /* MAMemberAnnotation.m in Sources */,
