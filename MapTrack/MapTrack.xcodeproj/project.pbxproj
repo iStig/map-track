@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62BF70791AF9DA6A00DA5F57 /* APIKeyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BF70781AF9DA6A00DA5F57 /* APIKeyConfig.m */; };
+		62446F2B1AF9DDCF0020FBE4 /* APIKeyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F281AF9DDCF0020FBE4 /* APIKeyConfig.m */; };
+		62446F2C1AF9DDCF0020FBE4 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */; };
+		62446F2F1AF9DDF70020FBE4 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */; };
+		62446F331AF9E3B90020FBE4 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F321AF9E3B90020FBE4 /* CustomAnnotationView.m */; };
+		62446F361AF9E3F30020FBE4 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F351AF9E3F30020FBE4 /* CustomCalloutView.m */; };
+		62446F391AF9E67A0020FBE4 /* RunMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F381AF9E67A0020FBE4 /* RunMember.m */; };
+		62446F3C1AF9EC870020FBE4 /* MAMemberAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F3B1AF9EC870020FBE4 /* MAMemberAnnotation.m */; };
 		62F952691AF9AD4900D63977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F952681AF9AD4900D63977 /* main.m */; };
 		62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526B1AF9AD4900D63977 /* AppDelegate.m */; };
 		62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526E1AF9AD4900D63977 /* ViewController.m */; };
@@ -15,7 +21,6 @@
 		62F952741AF9AD4900D63977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F952731AF9AD4900D63977 /* Images.xcassets */; };
 		62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F952751AF9AD4900D63977 /* LaunchScreen.xib */; };
 		62F952831AF9AD4900D63977 /* MapTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F952821AF9AD4900D63977 /* MapTrackTests.m */; };
-		62F9528E1AF9AFEA00D63977 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F9528D1AF9AFEA00D63977 /* MAMapKit.framework */; };
 		62F952951AF9BD6800D63977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952941AF9BD6800D63977 /* UIKit.framework */; };
 		62F952971AF9BD7000D63977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952961AF9BD7000D63977 /* Foundation.framework */; };
 		62F952991AF9BD7A00D63977 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952981AF9BD7A00D63977 /* CoreGraphics.framework */; };
@@ -26,7 +31,6 @@
 		62F952A31AF9BDC400D63977 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952A21AF9BDC400D63977 /* libz.dylib */; };
 		62F952A51AF9BDD100D63977 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952A41AF9BDD100D63977 /* libstdc++.6.0.9.dylib */; };
 		62F952A71AF9BDDC00D63977 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F952A61AF9BDDC00D63977 /* Security.framework */; };
-		62F952AC1AF9C38400D63977 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62F952AB1AF9C38400D63977 /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		62BF70771AF9DA6A00DA5F57 /* APIKeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKeyConfig.h; sourceTree = "<group>"; };
-		62BF70781AF9DA6A00DA5F57 /* APIKeyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIKeyConfig.m; sourceTree = "<group>"; };
+		62446F251AF9DDCF0020FBE4 /* MAAPIconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAPIconfig.h; sourceTree = "<group>"; };
+		62446F271AF9DDCF0020FBE4 /* APIKeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKeyConfig.h; sourceTree = "<group>"; };
+		62446F281AF9DDCF0020FBE4 /* APIKeyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIKeyConfig.m; sourceTree = "<group>"; };
+		62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		62446F2D1AF9DDF70020FBE4 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		62446F311AF9E3B90020FBE4 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		62446F321AF9E3B90020FBE4 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		62446F341AF9E3F30020FBE4 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		62446F351AF9E3F30020FBE4 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		62446F371AF9E67A0020FBE4 /* RunMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunMember.h; sourceTree = "<group>"; };
+		62446F381AF9E67A0020FBE4 /* RunMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunMember.m; sourceTree = "<group>"; };
+		62446F3A1AF9EC870020FBE4 /* MAMemberAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMemberAnnotation.h; sourceTree = "<group>"; };
+		62446F3B1AF9EC870020FBE4 /* MAMemberAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMemberAnnotation.m; sourceTree = "<group>"; };
 		62F952631AF9AD4900D63977 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F952671AF9AD4900D63977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F952681AF9AD4900D63977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,8 +71,6 @@
 		62F9527C1AF9AD4900D63977 /* MapTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F952811AF9AD4900D63977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62F952821AF9AD4900D63977 /* MapTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTrackTests.m; sourceTree = "<group>"; };
-		62F9528D1AF9AFEA00D63977 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
-		62F952911AF9B4A800D63977 /* MAAPIconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAPIconfig.h; sourceTree = "<group>"; };
 		62F952941AF9BD6800D63977 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62F952961AF9BD7000D63977 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		62F952981AF9BD7A00D63977 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,7 +81,6 @@
 		62F952A21AF9BDC400D63977 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		62F952A41AF9BDD100D63977 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		62F952A61AF9BDDC00D63977 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		62F952AB1AF9C38400D63977 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.5.0.ce99742/Resources/AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,7 @@
 			files = (
 				62F952A71AF9BDDC00D63977 /* Security.framework in Frameworks */,
 				62F952A51AF9BDD100D63977 /* libstdc++.6.0.9.dylib in Frameworks */,
+				62446F2C1AF9DDCF0020FBE4 /* MAMapKit.framework in Frameworks */,
 				62F952A31AF9BDC400D63977 /* libz.dylib in Frameworks */,
 				62F952A11AF9BDB500D63977 /* SystemConfiguration.framework in Frameworks */,
 				62F9529F1AF9BDA800D63977 /* CoreTelephony.framework in Frameworks */,
@@ -85,7 +99,6 @@
 				62F952991AF9BD7A00D63977 /* CoreGraphics.framework in Frameworks */,
 				62F952971AF9BD7000D63977 /* Foundation.framework in Frameworks */,
 				62F952951AF9BD6800D63977 /* UIKit.framework in Frameworks */,
-				62F9528E1AF9AFEA00D63977 /* MAMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +112,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62BF70761AF9DA5600DA5F57 /* Helpers */ = {
+		62446F231AF9DDCF0020FBE4 /* MAMapKit */ = {
 			isa = PBXGroup;
 			children = (
-				62BF70771AF9DA6A00DA5F57 /* APIKeyConfig.h */,
-				62BF70781AF9DA6A00DA5F57 /* APIKeyConfig.m */,
+				62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */,
+				62446F241AF9DDCF0020FBE4 /* Config */,
+				62446F261AF9DDCF0020FBE4 /* Helpers */,
+				62446F2A1AF9DDCF0020FBE4 /* Models */,
+			);
+			path = MAMapKit;
+			sourceTree = "<group>";
+		};
+		62446F241AF9DDCF0020FBE4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				62446F251AF9DDCF0020FBE4 /* MAAPIconfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		62446F261AF9DDCF0020FBE4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				62446F271AF9DDCF0020FBE4 /* APIKeyConfig.h */,
+				62446F281AF9DDCF0020FBE4 /* APIKeyConfig.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		62446F2A1AF9DDCF0020FBE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62446F2D1AF9DDF70020FBE4 /* CustomAnnotation.h */,
+				62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */,
+				62446F371AF9E67A0020FBE4 /* RunMember.h */,
+				62446F381AF9E67A0020FBE4 /* RunMember.m */,
+				62446F3A1AF9EC870020FBE4 /* MAMemberAnnotation.h */,
+				62446F3B1AF9EC870020FBE4 /* MAMemberAnnotation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62446F301AF9E3B00020FBE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62446F341AF9E3F30020FBE4 /* CustomCalloutView.h */,
+				62446F351AF9E3F30020FBE4 /* CustomCalloutView.m */,
+				62446F311AF9E3B90020FBE4 /* CustomAnnotationView.h */,
+				62446F321AF9E3B90020FBE4 /* CustomAnnotationView.m */,
+			);
+			name = Views;
+			path = MAMapKit/Views;
 			sourceTree = "<group>";
 		};
 		62F9525A1AF9AD4900D63977 = {
@@ -139,7 +196,8 @@
 		62F952651AF9AD4900D63977 /* MapTrack */ = {
 			isa = PBXGroup;
 			children = (
-				62F9528C1AF9AFD800D63977 /* MAMapKit */,
+				62446F301AF9E3B00020FBE4 /* Views */,
+				62446F231AF9DDCF0020FBE4 /* MAMapKit */,
 				62F9526A1AF9AD4900D63977 /* AppDelegate.h */,
 				62F9526B1AF9AD4900D63977 /* AppDelegate.m */,
 				62F9526D1AF9AD4900D63977 /* ViewController.h */,
@@ -176,33 +234,6 @@
 				62F952811AF9AD4900D63977 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		62F9528C1AF9AFD800D63977 /* MAMapKit */ = {
-			isa = PBXGroup;
-			children = (
-				62BF70761AF9DA5600DA5F57 /* Helpers */,
-				62F952AB1AF9C38400D63977 /* AMap.bundle */,
-				62F9528F1AF9B47A00D63977 /* Config */,
-				62F952901AF9B47A00D63977 /* Models */,
-				62F9528D1AF9AFEA00D63977 /* MAMapKit.framework */,
-			);
-			path = MAMapKit;
-			sourceTree = "<group>";
-		};
-		62F9528F1AF9B47A00D63977 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				62F952911AF9B4A800D63977 /* MAAPIconfig.h */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		62F952901AF9B47A00D63977 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +318,6 @@
 			files = (
 				62F952721AF9AD4900D63977 /* Main.storyboard in Resources */,
 				62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */,
-				62F952AC1AF9C38400D63977 /* AMap.bundle in Resources */,
 				62F952741AF9AD4900D63977 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,10 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62446F331AF9E3B90020FBE4 /* CustomAnnotationView.m in Sources */,
+				62446F361AF9E3F30020FBE4 /* CustomCalloutView.m in Sources */,
 				62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */,
+				62446F391AF9E67A0020FBE4 /* RunMember.m in Sources */,
 				62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */,
-				62BF70791AF9DA6A00DA5F57 /* APIKeyConfig.m in Sources */,
+				62446F2B1AF9DDCF0020FBE4 /* APIKeyConfig.m in Sources */,
+				62446F2F1AF9DDF70020FBE4 /* CustomAnnotation.m in Sources */,
 				62F952691AF9AD4900D63977 /* main.m in Sources */,
+				62446F3C1AF9EC870020FBE4 /* MAMemberAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
