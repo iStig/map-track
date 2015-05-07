@@ -15,7 +15,7 @@
 @interface CustomAnnotation ()
 @property (nonatomic, strong) MAMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) NSMutableArray *members;
+@property (nonatomic, copy) NSMutableArray *members;
 @end
 @implementation CustomAnnotation
 
@@ -122,12 +122,19 @@
     [self.mapView addAnnotation:annotation];
 }
 
-#pragma mark Public 
-- (void)refreshData:(NSArray *)members {
-    if (self.members.count > 0) {
-        [self.members removeAllObjects];
-        self.members  = (NSMutableArray *)members;
+- (void)enumRemoveMembers {
+    for ( MAMemberAnnotation *annotation in self.mapView.annotations) {
+            MAAnnotationView* view =  [self.mapView viewForAnnotation:annotation];
+            [view removeFromSuperview];
     }
+}
+
+#pragma mark Public 
+- (void)refreshData:(NSArray *)member {
+
+    [self enumRemoveMembers];
+    
+    self.members = (NSMutableArray *)member;
     [self enumMembers];
 }
 

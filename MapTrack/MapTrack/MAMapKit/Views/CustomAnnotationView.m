@@ -2,8 +2,8 @@
 //  CustomAnnotationView.m
 //  CustomAnnotationDemo
 //
-//  Created by songjian on 13-3-11.
-//  Copyright (c) 2013年 songjian. All rights reserved.
+//  Created by iStig on 15/5/6.
+//  Copyright (c) 2015年 iStig. All rights reserved.
 //
 
 #import "CustomAnnotationView.h"

@@ -2,8 +2,8 @@
 //  CustomCalloutView.h
 //  Category_demo2D
 //
-//  Created by xiaoming han on 13-5-22.
-//  Copyright (c) 2013年 songjian. All rights reserved.
+//  Created by iStig on 15/5/6.
+//  Copyright (c) 2015年 iStig. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,8 +2,8 @@
 //  Tracking.h
 //  Tracking
 //
-//  Created by xiaojian on 14-7-30.
-//  Copyright (c) 2014年 Tab. All rights reserved.
+//  Created by iStig on 15/5/6.
+//  Copyright (c) 2015年 iStig. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

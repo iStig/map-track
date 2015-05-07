@@ -8,9 +8,11 @@
 
 #import "MoveViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import "CustomMoving.h"
 
 @interface MoveViewController()
 @property (nonatomic, strong) MAMapView *mapView;
+@property (nonatomic, strong) CustomMoving *locationManager;
 @end
 @implementation MoveViewController
 - (void)initMapView {
@@ -20,5 +22,7 @@
 
 - (void)viewDidLoad {
     [self initMapView];
+    self.locationManager = [CustomMoving checkLocationAvailable];
+    self.locationManager.mapView = self.mapView;
 }
 @end

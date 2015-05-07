@@ -48,14 +48,18 @@
 - (void)setupCustomAnnotaion {
     self.customAnnotation = [[CustomAnnotation alloc] initWithMembers:self.members mapView:self.mapView];
     
-    NSDate *scheduledTime = [NSDate dateWithTimeIntervalSinceNow:2.0];
-
-   self.timer = [[NSTimer alloc] initWithFireDate:scheduledTime
-                                              interval:2
-                                                target:self
-                                              selector:@selector(refreshMembers)
-                                              userInfo:nil
-                                               repeats:YES];
+//    NSDate *scheduledTime = [NSDate dateWithTimeIntervalSinceNow:2.0];
+//
+//   self.timer = [[NSTimer alloc] initWithFireDate:scheduledTime
+//                                              interval:2
+//                                                target:self
+//                                              selector:@selector(refreshMembers)
+//                                              userInfo:nil
+//                                               repeats:YES];
+    
+    
+    // initialize the timer
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(refreshMembers) userInfo:nil repeats:YES];
 }
 
 - (void)refreshMembers {
