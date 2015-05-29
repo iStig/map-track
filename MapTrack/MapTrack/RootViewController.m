@@ -7,9 +7,10 @@
 //
 
 #import "RootViewController.h"
-#import "ViewController.h"
+#import "MembersViewController.h"
 #import "MoveViewController.h"
 #import "TrackViewController.h"
+#import "ColorTrackingViewController.h"
 @interface RootViewController ()
 - (IBAction)memebers:(id)sender;
 - (IBAction)TrackingAnimation:(id)sender;
@@ -20,11 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
 
 - (IBAction)memebers:(id)sender
 {
-    ViewController *v = [[ViewController alloc] init];
+    MembersViewController *v = [[MembersViewController alloc] init];
     [self.navigationController pushViewController:v animated:YES];
 }
 
@@ -37,6 +39,11 @@
 - (IBAction)moveTracking:(id)sender
 {
     MoveViewController *v = [[MoveViewController alloc] init];
+    [self.navigationController pushViewController:v animated:YES];
+}
+
+- (IBAction)colorTracking:(id)sender {
+    ColorTrackingViewController *v = [[ColorTrackingViewController alloc] init];
     [self.navigationController pushViewController:v animated:YES];
 }
 

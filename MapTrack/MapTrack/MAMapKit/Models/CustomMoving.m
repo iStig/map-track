@@ -37,8 +37,8 @@
     if (!_mapView) {
         _mapView = map;
         _mapView.delegate = self;
-//        _mapView.showsUserLocation = YES;
-//        _mapView.userTrackingMode = 2;
+        _mapView.showsUserLocation = YES;
+        _mapView.userTrackingMode = 1;
         
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
@@ -76,13 +76,14 @@
                 coords[0] = ((CLLocation *)self.locations.lastObject).coordinate;
                 coords[1] = newLocation.coordinate;
                 
-        
-                
+    
                 MACoordinateRegion region =
-                MACoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500);
+                MACoordinateRegionMakeWithDistance(newLocation.coordinate, 0.01, 0.01);
                 [self.mapView setRegion:region animated:YES];
                 
                 [self.mapView addOverlay:[MAPolyline polylineWithCoordinates:coords count:2]];
+
+            
             }
             
             [self.locations addObject:newLocation];

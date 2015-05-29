@@ -25,4 +25,6 @@
     self.locationManager = [CustomMoving checkLocationAvailable];
     self.locationManager.mapView = self.mapView;
 }
+
+
 @end

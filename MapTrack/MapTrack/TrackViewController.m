@@ -49,12 +49,19 @@
 - (void)setupTracking
 {
     NSString *trackingFilePath = [[NSBundle mainBundle] pathForResource:@"GuGong" ofType:@"tracking"];
+
+
     
     NSData *trackingData = [NSData dataWithContentsOfFile:trackingFilePath];
     
+    /*分配CLLocationCoordinate2D类型的内存*/
     CLLocationCoordinate2D *coordinates = (CLLocationCoordinate2D *)malloc(trackingData.length);
     
-    /* 提取轨迹原始数据. */
+    
+//    float z;
+//    [trackingData getBytes:&z length:sizeof(float)];
+    
+    /* 提取轨迹原始数据. 将trackingData拷贝到coordinates这个内存缓存区 */
     [trackingData getBytes:coordinates length:trackingData.length];
     
     /* 构建tracking. */

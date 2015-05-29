@@ -131,9 +131,7 @@
 
 #pragma mark Public 
 - (void)refreshData:(NSArray *)member {
-
     [self enumRemoveMembers];
-    
     self.members = (NSMutableArray *)member;
     [self enumMembers];
 }

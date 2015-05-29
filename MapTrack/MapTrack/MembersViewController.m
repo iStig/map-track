@@ -6,19 +6,20 @@
 //  Copyright (c) 2015年 iStig. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MembersViewController.h"
 #import <MAMapKit/MAMapKit.h>
 #import "CustomAnnotation.h"
 #import "RunMember.h"
-@interface ViewController ()
+@interface MembersViewController ()
 @property (nonatomic, strong) MAMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) CustomAnnotation *customAnnotation;
 @property (nonatomic, strong) NSMutableArray *members;
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) NSArray *customData;
 @end
 
-@implementation ViewController
+@implementation MembersViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +30,16 @@
 
 - (void)initMapView {
     self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
+//    //要显示的位置经纬度
+//    CLLocationCoordinate2D lc2d = CLLocationCoordinate2DMake(121.606209,31.212939);
+//    //缩放比例
+//    MACoordinateSpan span = MACoordinateSpanMake(1, 1);
+//    //地图结构体
+//    MACoordinateRegion region =  MACoordinateRegionMake(lc2d, span);
+//    [self.mapView setRegion:region animated:YES];
     [self.view addSubview:self.mapView];
+    
+    
 }
 
 - (void)initMembers {
@@ -47,16 +57,6 @@
 
 - (void)setupCustomAnnotaion {
     self.customAnnotation = [[CustomAnnotation alloc] initWithMembers:self.members mapView:self.mapView];
-    
-//    NSDate *scheduledTime = [NSDate dateWithTimeIntervalSinceNow:2.0];
-//
-//   self.timer = [[NSTimer alloc] initWithFireDate:scheduledTime
-//                                              interval:2
-//                                                target:self
-//                                              selector:@selector(refreshMembers)
-//                                              userInfo:nil
-//                                               repeats:YES];
-    
     
     // initialize the timer
     self.timer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(refreshMembers) userInfo:nil repeats:YES];

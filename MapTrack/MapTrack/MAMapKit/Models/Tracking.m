@@ -15,9 +15,9 @@
 }
 
 @property (nonatomic, strong) CAShapeLayer *shapeLayer;
-
 @property (nonatomic, strong, readwrite) MAPointAnnotation *annotation;
 @property (nonatomic, strong, readwrite) MAPolyline *polyline;
+
 
 @end
 
@@ -231,6 +231,8 @@
         
         _count = count;
         
+        
+        //初始化内存空间
         _coordinates = (CLLocationCoordinate2D *)malloc(count * sizeof(CLLocationCoordinate2D));
         
         if (_coordinates == NULL)

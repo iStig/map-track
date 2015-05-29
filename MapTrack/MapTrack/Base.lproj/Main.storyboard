@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PKd-Kq-FIe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PKd-Kq-FIe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Members View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MembersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -79,17 +79,35 @@
                                     <action selector="memebers:" destination="ogq-n6-wIj" eventType="touchUpInside" id="ff3-99-QaW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMc-sN-qGH">
+                                <rect key="frame" x="207" y="341" width="187" height="49"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="UAi-s7-V2l"/>
+                                    <constraint firstAttribute="height" constant="49" id="VCh-aI-ype"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="ColorTrack Animation">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorTracking:" destination="ogq-n6-wIj" eventType="touchUpInside" id="mqy-bn-DUG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jfi-oT-v8t" secondAttribute="centerX" id="C25-Y7-Hh6"/>
                             <constraint firstItem="0cX-6U-T5c" firstAttribute="centerX" secondItem="jfi-oT-v8t" secondAttribute="centerX" id="HJ8-WF-snH"/>
                             <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="124" id="Qts-ww-BnQ"/>
                             <constraint firstItem="pl1-hS-rw4" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="100" id="TBv-Eb-MCl"/>
                             <constraint firstItem="jfi-oT-v8t" firstAttribute="centerX" secondItem="pl1-hS-rw4" secondAttribute="centerX" id="V9G-eG-9D6"/>
                             <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="pl1-hS-rw4" secondAttribute="bottom" constant="26" id="aQg-dm-Knc"/>
                             <constraint firstItem="pl1-hS-rw4" firstAttribute="top" secondItem="fJ0-om-CKV" secondAttribute="top" constant="100" id="eHa-qW-VFq"/>
+                            <constraint firstItem="ZMc-sN-qGH" firstAttribute="top" secondItem="jfi-oT-v8t" secondAttribute="bottom" constant="32" id="foO-ts-80j"/>
                             <constraint firstItem="jfi-oT-v8t" firstAttribute="top" secondItem="0cX-6U-T5c" secondAttribute="bottom" constant="36" id="gyI-1r-n8e"/>
                             <constraint firstItem="0cX-6U-T5c" firstAttribute="top" secondItem="pl1-hS-rw4" secondAttribute="bottom" constant="26" id="m0u-9l-xcA"/>
+                            <constraint firstAttribute="centerX" secondItem="ZMc-sN-qGH" secondAttribute="centerX" id="mdM-zC-J4v"/>
                             <constraint firstAttribute="centerX" secondItem="0cX-6U-T5c" secondAttribute="centerX" id="z8K-Ts-C92"/>
                         </constraints>
                         <variation key="default">
@@ -156,6 +174,23 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVz-wq-3fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Color Tracking View Controller-->
+        <scene sceneID="fsv-Qr-Ly3">
+            <objects>
+                <viewController id="HP1-fa-fXs" customClass="ColorTrackingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aOT-PS-QjY"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdO-OQ-yDU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c3d-Y8-GwU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEg-NL-cgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
