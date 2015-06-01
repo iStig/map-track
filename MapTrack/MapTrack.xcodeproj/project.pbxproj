@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62249DDC1B1710FD00ED1E23 /* ColorTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62249DDB1B1710FD00ED1E23 /* ColorTrackingViewController.m */; };
+		62249DE11B17131700ED1E23 /* GradientPolylineOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 62249DDE1B17131700ED1E23 /* GradientPolylineOverlay.m */; };
+		62249DE21B17131700ED1E23 /* GradientPolylineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62249DE01B17131700ED1E23 /* GradientPolylineRenderer.m */; };
+		62249DE41B17132100ED1E23 /* record.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62249DE31B17132100ED1E23 /* record.txt */; };
 		62446F2B1AF9DDCF0020FBE4 /* APIKeyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F281AF9DDCF0020FBE4 /* APIKeyConfig.m */; };
 		62446F2C1AF9DDCF0020FBE4 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */; };
 		62446F2F1AF9DDF70020FBE4 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */; };
@@ -20,10 +24,12 @@
 		62446F4B1AF9FE840020FBE4 /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4A1AF9FE840020FBE4 /* Tracking.m */; };
 		62446F4E1AF9FEEF0020FBE4 /* CustomTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */; };
 		62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */ = {isa = PBXBuildFile; fileRef = 62446F4F1AFA02980020FBE4 /* GuGong.tracking */; };
+		6279CF3C1B04326B00199EBA /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6279CF3B1B04326B00199EBA /* AMap.bundle */; };
+		62EBC3981B1854E7001436FC /* SMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EBC3971B1854E7001436FC /* SMLocationManager.m */; };
 		62EF9F681AFB089D00B635E0 /* CustomMoving.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF9F671AFB089D00B635E0 /* CustomMoving.m */; };
 		62F952691AF9AD4900D63977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F952681AF9AD4900D63977 /* main.m */; };
 		62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526B1AF9AD4900D63977 /* AppDelegate.m */; };
-		62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526E1AF9AD4900D63977 /* ViewController.m */; };
+		62F9526F1AF9AD4900D63977 /* MembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526E1AF9AD4900D63977 /* MembersViewController.m */; };
 		62F952721AF9AD4900D63977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F952701AF9AD4900D63977 /* Main.storyboard */; };
 		62F952741AF9AD4900D63977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F952731AF9AD4900D63977 /* Images.xcassets */; };
 		62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F952751AF9AD4900D63977 /* LaunchScreen.xib */; };
@@ -51,6 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62249DDA1B1710FD00ED1E23 /* ColorTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTrackingViewController.h; sourceTree = "<group>"; };
+		62249DDB1B1710FD00ED1E23 /* ColorTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTrackingViewController.m; sourceTree = "<group>"; };
+		62249DDD1B17131700ED1E23 /* GradientPolylineOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientPolylineOverlay.h; sourceTree = "<group>"; };
+		62249DDE1B17131700ED1E23 /* GradientPolylineOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientPolylineOverlay.m; sourceTree = "<group>"; };
+		62249DDF1B17131700ED1E23 /* GradientPolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientPolylineRenderer.h; sourceTree = "<group>"; };
+		62249DE01B17131700ED1E23 /* GradientPolylineRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientPolylineRenderer.m; sourceTree = "<group>"; };
+		62249DE31B17132100ED1E23 /* record.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = record.txt; sourceTree = "<group>"; };
 		62446F251AF9DDCF0020FBE4 /* MAAPIconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAPIconfig.h; sourceTree = "<group>"; };
 		62446F271AF9DDCF0020FBE4 /* APIKeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKeyConfig.h; sourceTree = "<group>"; };
 		62446F281AF9DDCF0020FBE4 /* APIKeyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIKeyConfig.m; sourceTree = "<group>"; };
@@ -76,6 +89,9 @@
 		62446F4C1AF9FEEF0020FBE4 /* CustomTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTracking.h; sourceTree = "<group>"; };
 		62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTracking.m; sourceTree = "<group>"; };
 		62446F4F1AFA02980020FBE4 /* GuGong.tracking */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuGong.tracking; sourceTree = "<group>"; };
+		6279CF3B1B04326B00199EBA /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.5.0.ce99742/Resources/AMap.bundle; sourceTree = "<group>"; };
+		62EBC3961B1854E7001436FC /* SMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLocationManager.h; sourceTree = "<group>"; };
+		62EBC3971B1854E7001436FC /* SMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLocationManager.m; sourceTree = "<group>"; };
 		62EF9F661AFB089D00B635E0 /* CustomMoving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMoving.h; sourceTree = "<group>"; };
 		62EF9F671AFB089D00B635E0 /* CustomMoving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMoving.m; sourceTree = "<group>"; };
 		62F952631AF9AD4900D63977 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +99,8 @@
 		62F952681AF9AD4900D63977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62F9526A1AF9AD4900D63977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62F9526B1AF9AD4900D63977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		62F9526D1AF9AD4900D63977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62F9526E1AF9AD4900D63977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62F9526D1AF9AD4900D63977 /* MembersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MembersViewController.h; sourceTree = "<group>"; };
+		62F9526E1AF9AD4900D63977 /* MembersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MembersViewController.m; sourceTree = "<group>"; };
 		62F952711AF9AD4900D63977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62F952731AF9AD4900D63977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		62F952761AF9AD4900D63977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -136,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				62446F4F1AFA02980020FBE4 /* GuGong.tracking */,
+				6279CF3B1B04326B00199EBA /* AMap.bundle */,
 				62446F291AF9DDCF0020FBE4 /* MAMapKit.framework */,
 				62446F241AF9DDCF0020FBE4 /* Config */,
 				62446F261AF9DDCF0020FBE4 /* Helpers */,
@@ -176,6 +193,10 @@
 				62446F2E1AF9DDF70020FBE4 /* CustomAnnotation.m */,
 				62EF9F661AFB089D00B635E0 /* CustomMoving.h */,
 				62EF9F671AFB089D00B635E0 /* CustomMoving.m */,
+				62249DDD1B17131700ED1E23 /* GradientPolylineOverlay.h */,
+				62249DDE1B17131700ED1E23 /* GradientPolylineOverlay.m */,
+				62249DDF1B17131700ED1E23 /* GradientPolylineRenderer.h */,
+				62249DE01B17131700ED1E23 /* GradientPolylineRenderer.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +211,15 @@
 			);
 			name = Views;
 			path = MAMapKit/Views;
+			sourceTree = "<group>";
+		};
+		62EBC3951B18546B001436FC /* SMLocationManger */ = {
+			isa = PBXGroup;
+			children = (
+				62EBC3961B1854E7001436FC /* SMLocationManager.h */,
+				62EBC3971B1854E7001436FC /* SMLocationManager.m */,
+			);
+			path = SMLocationManger;
 			sourceTree = "<group>";
 		};
 		62F9525A1AF9AD4900D63977 = {
@@ -223,14 +253,17 @@
 		62F952651AF9AD4900D63977 /* MapTrack */ = {
 			isa = PBXGroup;
 			children = (
+				62EBC3951B18546B001436FC /* SMLocationManger */,
 				62446F301AF9E3B00020FBE4 /* Views */,
 				62446F231AF9DDCF0020FBE4 /* MAMapKit */,
 				62F9526A1AF9AD4900D63977 /* AppDelegate.h */,
 				62F9526B1AF9AD4900D63977 /* AppDelegate.m */,
 				62446F401AF9F3D30020FBE4 /* RootViewController.h */,
 				62446F411AF9F3D30020FBE4 /* RootViewController.m */,
-				62F9526D1AF9AD4900D63977 /* ViewController.h */,
-				62F9526E1AF9AD4900D63977 /* ViewController.m */,
+				62F9526D1AF9AD4900D63977 /* MembersViewController.h */,
+				62F9526E1AF9AD4900D63977 /* MembersViewController.m */,
+				62249DDA1B1710FD00ED1E23 /* ColorTrackingViewController.h */,
+				62249DDB1B1710FD00ED1E23 /* ColorTrackingViewController.m */,
 				62446F431AF9F7E90020FBE4 /* MoveViewController.h */,
 				62446F441AF9F7E90020FBE4 /* MoveViewController.m */,
 				62446F461AF9F7FA0020FBE4 /* TrackViewController.h */,
@@ -246,6 +279,7 @@
 		62F952661AF9AD4900D63977 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62249DE31B17132100ED1E23 /* record.txt */,
 				62F952671AF9AD4900D63977 /* Info.plist */,
 				62F952681AF9AD4900D63977 /* main.m */,
 			);
@@ -349,8 +383,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6279CF3C1B04326B00199EBA /* AMap.bundle in Resources */,
 				62F952721AF9AD4900D63977 /* Main.storyboard in Resources */,
 				62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */,
+				62249DE41B17132100ED1E23 /* record.txt in Resources */,
 				62F952741AF9AD4900D63977 /* Images.xcassets in Resources */,
 				62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */,
 			);
@@ -374,13 +410,17 @@
 				62446F331AF9E3B90020FBE4 /* CustomAnnotationView.m in Sources */,
 				62446F361AF9E3F30020FBE4 /* CustomCalloutView.m in Sources */,
 				62446F451AF9F7E90020FBE4 /* MoveViewController.m in Sources */,
-				62F9526F1AF9AD4900D63977 /* ViewController.m in Sources */,
+				62F9526F1AF9AD4900D63977 /* MembersViewController.m in Sources */,
 				62446F391AF9E67A0020FBE4 /* RunMember.m in Sources */,
+				62EBC3981B1854E7001436FC /* SMLocationManager.m in Sources */,
 				62446F421AF9F3D30020FBE4 /* RootViewController.m in Sources */,
 				62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */,
 				62446F4E1AF9FEEF0020FBE4 /* CustomTracking.m in Sources */,
+				62249DDC1B1710FD00ED1E23 /* ColorTrackingViewController.m in Sources */,
+				62249DE21B17131700ED1E23 /* GradientPolylineRenderer.m in Sources */,
 				62446F2B1AF9DDCF0020FBE4 /* APIKeyConfig.m in Sources */,
 				62446F4B1AF9FE840020FBE4 /* Tracking.m in Sources */,
+				62249DE11B17131700ED1E23 /* GradientPolylineOverlay.m in Sources */,
 				62446F481AF9F7FA0020FBE4 /* TrackViewController.m in Sources */,
 				62446F2F1AF9DDF70020FBE4 /* CustomAnnotation.m in Sources */,
 				62F952691AF9AD4900D63977 /* main.m in Sources */,

@@ -10,9 +10,10 @@
 #import <MAMapKit/MAMapKit.h>
 #import "GradientPolylineRenderer.h"
 #import "GradientPolylineOverlay.h"
+#import "SMLocationManager.h"
 
 @interface ColorTrackingViewController ()
-@property (nonatomic, strong) MAMapView *mapView;
+@property (nonatomic, strong) MKMapView *mapView;
 @end
 
 @implementation ColorTrackingViewController
@@ -21,18 +22,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initMapView];
+    
+    [[SMLocationManager smlocationManager] setUpdateLocation:^{
+        NSLog(@"hello");
+    }];
 }
 
 
 - (void)initMapView {
-    self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.mapView];
+}
+
+- (MKMapView *)mapView {
+    if (_mapView == nil) {
+        _mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    }
+    return _mapView;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

@@ -11,7 +11,9 @@
 #import "MoveViewController.h"
 #import "TrackViewController.h"
 #import "ColorTrackingViewController.h"
+#import "SMLocationManager.h"
 @interface RootViewController ()
+@property (nonatomic, strong)    SMLocationManager *manager;
 - (IBAction)memebers:(id)sender;
 - (IBAction)TrackingAnimation:(id)sender;
 - (IBAction)moveTracking:(id)sender;
@@ -21,6 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[SMLocationManager smlocationManager] setUpdateLocation:^{
+        NSLog(@"location");
+    }];
     
 }
 

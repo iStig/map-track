@@ -12,10 +12,7 @@
 @protocol TrackingDelegate;
 
 @interface Tracking : NSObject
-
 @property (nonatomic, assign) id<TrackingDelegate> delegate;
-
-
 
 /*!
  @brief 初始化时需要提供的 mapView

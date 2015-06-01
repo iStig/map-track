@@ -82,12 +82,33 @@
                 [self.mapView setRegion:region animated:YES];
                 
                 [self.mapView addOverlay:[MAPolyline polylineWithCoordinates:coords count:2]];
-
-            
             }
             
             [self.locations addObject:newLocation];
         }
+    }
+}
+
+//这个方法有待考究
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+            NSLog(@"kCLAuthorizationStatusNotDetermined");
+            break;
+        case kCLAuthorizationStatusRestricted:
+            NSLog(@"kCLAuthorizationStatusRestricted");
+            break;
+        case kCLAuthorizationStatusDenied:
+            NSLog(@"kCLAuthorizationStatusDenied");
+            break;
+        case kCLAuthorizationStatusAuthorizedAlways:
+            NSLog(@"kCLAuthorizationStatusAuthorizedAlways");
+            break;
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            NSLog(@"kCLAuthorizationStatusAuthorizedWhenInUse");
+            break;
+        default:
+            break;
     }
 }
 

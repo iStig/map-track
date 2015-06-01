@@ -10,6 +10,7 @@
 #import <MAMapKit/MAMapKit.h>
 #import "Tracking.h"
 #import "CustomTracking.h"
+#import "SMLocationManager.h"
 
 @interface TrackViewController()
 @property (nonatomic, strong) MAMapView *mapView;
@@ -22,6 +23,8 @@
 - (void)viewDidLoad {
     [self initMapView];
     [self setupNavigationBar];
+    [[SMLocationManager smlocationManager] setUpdateLocation:nil];
+    
 }
 
 - (void)handleRunAction
