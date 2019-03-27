@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "MAAPIconfig.h"
 #import <MAMapKit/MAMapKit.h>
+
+
+
 @implementation APIKeyConfig
 
 + (void)configureAPIKey {
@@ -18,7 +21,8 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:reason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
-    [MAMapServices sharedServices].apiKey = (NSString *)APIKey;
+    
+    [AMapServices sharedServices].apiKey = (NSString *)APIKey;
 }
 
 @end
