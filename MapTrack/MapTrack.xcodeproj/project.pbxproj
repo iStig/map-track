@@ -23,9 +23,12 @@
 		62446F4B1AF9FE840020FBE4 /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4A1AF9FE840020FBE4 /* Tracking.m */; };
 		62446F4E1AF9FEEF0020FBE4 /* CustomTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */; };
 		62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */ = {isa = PBXBuildFile; fileRef = 62446F4F1AFA02980020FBE4 /* GuGong.tracking */; };
-		6279CF3C1B04326B00199EBA /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6279CF3B1B04326B00199EBA /* AMap.bundle */; };
 		62E29F2B224B481200424876 /* SMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E29F2A224B481200424876 /* SMLocationManager.m */; };
 		62E29F2E224B48C800424876 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E29F2D224B48C800424876 /* libc++.tbd */; };
+		62E29F3D224B4FFD00424876 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E29F3A224B4FFD00424876 /* AMapFoundationKit.framework */; };
+		62E29F3E224B4FFD00424876 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E29F3B224B4FFD00424876 /* MAMapKit.framework */; };
+		62E29F3F224B4FFD00424876 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E29F3C224B4FFD00424876 /* AMapSearchKit.framework */; };
+		62E29F41224B50B500424876 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62E29F40224B50B500424876 /* AMap.bundle */; };
 		62EF9F681AFB089D00B635E0 /* CustomMoving.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF9F671AFB089D00B635E0 /* CustomMoving.m */; };
 		62F952691AF9AD4900D63977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F952681AF9AD4900D63977 /* main.m */; };
 		62F9526C1AF9AD4900D63977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F9526B1AF9AD4900D63977 /* AppDelegate.m */; };
@@ -87,12 +90,15 @@
 		62446F4C1AF9FEEF0020FBE4 /* CustomTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTracking.h; sourceTree = "<group>"; };
 		62446F4D1AF9FEEF0020FBE4 /* CustomTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTracking.m; sourceTree = "<group>"; };
 		62446F4F1AFA02980020FBE4 /* GuGong.tracking */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuGong.tracking; sourceTree = "<group>"; };
-		6279CF3B1B04326B00199EBA /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/Versions/2.5.0.ce99742/Resources/AMap.bundle; sourceTree = "<group>"; };
 		62E29F29224B481200424876 /* SMLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMLocationManager.h; path = MapTrack/SMLocationManager.h; sourceTree = SOURCE_ROOT; };
 		62E29F2A224B481200424876 /* SMLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SMLocationManager.m; path = MapTrack/SMLocationManager.m; sourceTree = SOURCE_ROOT; };
 		62E29F2D224B48C800424876 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		62E29F2F224B491100424876 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		62E29F31224B491800424876 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		62E29F3A224B4FFD00424876 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		62E29F3B224B4FFD00424876 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		62E29F3C224B4FFD00424876 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		62E29F40224B50B500424876 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = Frameworks/MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
 		62EF9F661AFB089D00B635E0 /* CustomMoving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMoving.h; sourceTree = "<group>"; };
 		62EF9F671AFB089D00B635E0 /* CustomMoving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMoving.m; sourceTree = "<group>"; };
 		62F952631AF9AD4900D63977 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +131,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E29F3D224B4FFD00424876 /* AMapFoundationKit.framework in Frameworks */,
 				62E29F2E224B48C800424876 /* libc++.tbd in Frameworks */,
 				62F952A71AF9BDDC00D63977 /* Security.framework in Frameworks */,
 				62F952A31AF9BDC400D63977 /* libz.dylib in Frameworks */,
 				62F952A11AF9BDB500D63977 /* SystemConfiguration.framework in Frameworks */,
 				62F9529F1AF9BDA800D63977 /* CoreTelephony.framework in Frameworks */,
+				62E29F3E224B4FFD00424876 /* MAMapKit.framework in Frameworks */,
+				62E29F3F224B4FFD00424876 /* AMapSearchKit.framework in Frameworks */,
 				62F9529D1AF9BD9F00D63977 /* CoreLocation.framework in Frameworks */,
 				62F9529B1AF9BD9400D63977 /* QuartzCore.framework in Frameworks */,
 				62F952991AF9BD7A00D63977 /* CoreGraphics.framework in Frameworks */,
@@ -151,8 +160,9 @@
 		62446F231AF9DDCF0020FBE4 /* MAMapKit */ = {
 			isa = PBXGroup;
 			children = (
+				62E29F40224B50B500424876 /* AMap.bundle */,
+				62E29F39224B4FFD00424876 /* Frameworks */,
 				62446F4F1AFA02980020FBE4 /* GuGong.tracking */,
-				6279CF3B1B04326B00199EBA /* AMap.bundle */,
 				62446F241AF9DDCF0020FBE4 /* Config */,
 				62446F261AF9DDCF0020FBE4 /* Helpers */,
 				62446F2A1AF9DDCF0020FBE4 /* Models */,
@@ -220,6 +230,16 @@
 				62E29F2D224B48C800424876 /* libc++.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62E29F39224B4FFD00424876 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E29F3A224B4FFD00424876 /* AMapFoundationKit.framework */,
+				62E29F3B224B4FFD00424876 /* MAMapKit.framework */,
+				62E29F3C224B4FFD00424876 /* AMapSearchKit.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		62F9525A1AF9AD4900D63977 = {
@@ -386,10 +406,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6279CF3C1B04326B00199EBA /* AMap.bundle in Resources */,
 				62F952721AF9AD4900D63977 /* Main.storyboard in Resources */,
 				62F952771AF9AD4900D63977 /* LaunchScreen.xib in Resources */,
 				62249DE41B17132100ED1E23 /* record.txt in Resources */,
+				62E29F41224B50B500424876 /* AMap.bundle in Resources */,
 				62F952741AF9AD4900D63977 /* Images.xcassets in Resources */,
 				62446F501AFA02980020FBE4 /* GuGong.tracking in Resources */,
 			);
@@ -556,10 +576,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MapTrack/MAMapKit",
+					"$(PROJECT_DIR)/MapTrack/MAMapKit/Frameworks",
 				);
 				INFOPLIST_FILE = MapTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istig.maptrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -572,10 +594,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MapTrack/MAMapKit",
+					"$(PROJECT_DIR)/MapTrack/MAMapKit/Frameworks",
 				);
 				INFOPLIST_FILE = MapTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.istig.maptrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

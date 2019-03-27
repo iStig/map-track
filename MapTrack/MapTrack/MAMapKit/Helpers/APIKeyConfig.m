@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MAAPIconfig.h"
 #import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapServices.h>
 
 
 
